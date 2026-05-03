@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il mio shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="cartBar" onclick="goToCart()">
+  🛒 Carrello: <span id="count">0</span> prodotti |
+  Totale: €<span id="total">0</span>
+</div>
+
+
+
+
+
+
+  <!-- HEADER -->
+  <header>
+    <h1>Il mio Shop</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Prodotti</a>
+      <a href="#">Carrello</a>
+      <a href="#">Contatti</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section>
+    <h2>Benvenuto nello shop</h2>
+    <p>Prodotti handmade e digitali creati da me</p>
+  </section>
+
+  <!-- PRODOTTI -->
+  <section>
+  <h2>Prodotti</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Prodotto 1</h3>
+      <p>Descrizione prodotto</p>
+      <p>€10</p>
+      <button onclick="addToCart('Prodotto 1', 10)">Aggiungi</button>
+    </div>
+
+    <div class="card">
+      <h3>Prodotto 2</h3>
+      <p>Descrizione prodotto</p>
+      <p>€15</p>
+      <button onclick="addToCart('Prodotto 2', 15)">Aggiungi</button>
+    </div>
+
+    <div class="card">
+      <h3>Prodotto 3</h3>
+      <p>Descrizione prodotto</p>
+      <p>€20</p>
+      <button onclick="addToCart('Prodotto 3', 20)">Aggiungi</button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Il mio Shop</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
