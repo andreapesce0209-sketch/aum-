@@ -2,23 +2,33 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carrello</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <main class="cart-page">
-    <h1>Il tuo carrello</h1>
 
-    <div id="cartList"></div>
+<header>
+  <h1>AUM</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Carrello</a>
+  </nav>
+</header>
 
-    <div class="cart-summary">
-      <p>Totale</p>
-      <h2>€<span id="total">0</span></h2>
-      <button onclick="goToCheckout()">Vai al pagamento</button>
-    </div>
-  </main>
+<main class="cart-page">
+  <h1>Il tuo carrello</h1>
 
-  <script src="script.js"></script>
+  <div id="cartList"></div>
+
+  <div class="cart-summary">
+    <p>Totale ordine</p>
+    <h2>€<span id="total">0</span></h2>
+    <button onclick="goToCheckout()">Vai al pagamento</button>
+  </div>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
