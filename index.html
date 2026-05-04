@@ -3,72 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il mio shop</title>
+  <title>Aum Shop</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="cartBar" onclick="goToCart()">
-  🛒 Carrello: <span id="count">0</span> prodotti |
-  Totale: €<span id="total">0</span>
-</div>
 
+<header>
+  <h1>AUM</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Carrello 🛒 <span id="count">0</span> | €<span id="total">0</span></a>
+  </nav>
+</header>
 
+<section class="hero">
+  <h2>Grafiche & Handmade</h2>
+  <p>Prodotti creativi, unici e fatti con stile.</p>
+</section>
 
-
-
-
-  <!-- HEADER -->
-  <header>
-    <h1>Il mio Shop</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Prodotti</a>
-      <a href="#">Carrello</a>
-      <a href="#">Contatti</a>
-    </nav>
-  </header>
-
-  <!-- HERO -->
-  <section>
-    <h2>Benvenuto nello shop</h2>
-    <p>Prodotti handmade e digitali creati da me</p>
-  </section>
-
-  <!-- PRODOTTI -->
-  <section>
+<section class="products">
   <h2>Prodotti</h2>
 
   <div class="grid">
 
     <div class="card">
+      <img src="img/p1.jpg" class="product-img" alt="Prodotto 1">
       <h3>Prodotto 1</h3>
-      <p>Descrizione prodotto</p>
-      <p>€10</p>
-      <button onclick="addToCart('Prodotto 1', 10)">Aggiungi</button>
+      <p class="price">€10</p>
+      <button onclick="addToCart('Prodotto 1', 10, 'img/p1.jpg')">Aggiungi</button>
     </div>
 
     <div class="card">
+      <img src="img/p2.jpg" class="product-img" alt="Prodotto 2">
       <h3>Prodotto 2</h3>
-      <p>Descrizione prodotto</p>
-      <p>€15</p>
-      <button onclick="addToCart('Prodotto 2', 15)">Aggiungi</button>
+      <p class="price">€15</p>
+      <button onclick="addToCart('Prodotto 2', 15, 'img/p2.jpg')">Aggiungi</button>
     </div>
 
     <div class="card">
+      <img src="img/p3.jpg" class="product-img" alt="Prodotto 3">
       <h3>Prodotto 3</h3>
-      <p>Descrizione prodotto</p>
-      <p>€20</p>
-      <button onclick="addToCart('Prodotto 3', 20)">Aggiungi</button>
+      <p class="price">€20</p>
+      <button onclick="addToCart('Prodotto 3', 20, 'img/p3.jpg')">Aggiungi</button>
     </div>
 
   </div>
 </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Il mio Shop</p>
-  </footer>
+<footer>
+  <p>© 2026 AUM</p>
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
