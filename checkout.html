@@ -9,42 +9,65 @@
 
 <body>
 
-  <section class="checkout">
-    <h1>Completa ordine</h1>
-    <p class="checkout-subtitle">Inserisci i tuoi dati</p>
+<header>
+  <h1>AUM</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Carrello</a>
+  </nav>
+</header>
 
-    <form id="checkoutForm" onsubmit="completeOrder(event)">
+<section class="checkout">
+  <h1>Completa ordine</h1>
+  <p class="checkout-subtitle">Pagamento sicuro e veloce</p>
 
-      <label>Nome e cognome</label>
-      <input type="text" id="name" placeholder="Mario Rossi">
+  <form onsubmit="completeOrder(event)">
+    <label>Nome e cognome</label>
+    <input type="text" id="name" placeholder="Mario Rossi">
 
-      <label>Email</label>
-      <input type="email" id="email" placeholder="email@email.com">
+    <label>Email</label>
+    <input type="email" id="email" placeholder="email@email.com">
 
-      <label>Città</label>
-      <input type="text" id="city" placeholder="Roma">
+    <label>Città</label>
+    <input type="text" id="city" placeholder="Roma">
 
-      <label>Via</label>
-      <input type="text" id="address" placeholder="Via Roma 10">
+    <label>Via</label>
+    <input type="text" id="address" placeholder="Via Roma 10">
 
-      <label>Metodo di pagamento</label>
-      <select id="payment">
-        <option value="">Seleziona</option>
-        <option>PayPal</option>
-        <option>Carta</option>
-        <option>Bonifico</option>
-      </select>
+    <label>Metodo di pagamento</label>
+    <select id="payment">
+      <option value="">Seleziona</option>
+      <option>Carta</option>
+      <option>PayPal</option>
+      <option>Bonifico</option>
+    </select>
 
-      <p id="error"></p>
+    <div class="card-payment">
+      <label>Numero carta</label>
+      <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
 
-      <h2>Totale: €<span id="total">0</span></h2>
+      <div class="payment-row">
+        <div>
+          <label>Scadenza</label>
+          <input type="text" id="expiry" placeholder="MM/AA">
+        </div>
 
-      <button type="submit">Conferma ordine</button>
+        <div>
+          <label>CVV</label>
+          <input type="text" id="cvv" placeholder="123">
+        </div>
+      </div>
+    </div>
 
-    </form>
-  </section>
+    <p id="error"></p>
 
-  <script src="script.js"></script>
+    <h2>Totale: €<span id="total">0</span></h2>
+
+    <button class="pay-btn" type="submit">Conferma ordine</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
